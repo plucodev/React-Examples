@@ -10,6 +10,9 @@ class Calculator extends Component {
 			number2: 0,
 			result: 0
 		};
+		// Binding methods
+		this.handleOnChange = this.handleOnChange.bind(this);
+		this.handleResult = this.handleResult.bind(this);
 	}
 
 	handleOnChange(e) {
