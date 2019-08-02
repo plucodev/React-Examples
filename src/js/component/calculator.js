@@ -30,15 +30,22 @@ class Calculator extends Component {
 
 	render() {
 		return (
-			<div className="Calculator">
-				<input onChange={this.handleOnChange} name="number1" type="text" value={this.state.number1} />
-				{" + "}
-				<input onChange={this.handleOnChange} name="number2" type="text" value={this.state.number2} />
-
-				<p>
-					<button onClick={this.handleResult}>=</button>
-				</p>
-				<p className="result">{this.state.result}</p>
+			<div className="container">
+				<div className="row">
+					<div className="col-8">
+						<input onChange={this.handleOnChange} name="number1" type="text" value={this.state.number1} />
+						{" + "}
+						<input onChange={this.handleOnChange} name="number2" type="text" value={this.state.number2} />
+					</div>
+					<div className="col float-left">
+						<button className="btn btn-info" onClick={this.handleResult}>
+							=
+						</button>
+					</div>
+					<div className="col float-left">
+						<p className="result">{this.state.result}</p>
+					</div>
+				</div>
 			</div>
 		);
 	}
