@@ -40,7 +40,7 @@ class Person extends Component {
 							<strong>Email:</strong>
 						</p>
 						<p>
-							<input name="email" type="email" />
+							<input value={this.state.email} name="email" type="email" />
 						</p>
 					</div>
 
@@ -49,7 +49,7 @@ class Person extends Component {
 							<strong>Phone:</strong>
 						</p>
 						<p>
-							<input name="phone" type="tel" />
+							<input value={this.state.phone} name="phone" type="tel" />
 						</p>
 					</div>
 
