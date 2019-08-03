@@ -22,7 +22,7 @@ class Person extends Component {
 							<strong>First Name:</strong>
 						</p>
 						<p>
-							<input name="firstName" type="text" />
+							<input value={this.state.firstName} name="firstName" type="text" />
 						</p>
 					</div>
 
@@ -31,7 +31,7 @@ class Person extends Component {
 							<strong>Last Name:</strong>
 						</p>
 						<p>
-							<input name="lastName" type="text" />
+							<input value={this.state.lastName} name="lastName" type="text" />
 						</p>
 					</div>
 
