@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Context } from "../store/appContext";
+import "../../styles/card.scss";
 
 export class Card extends React.Component {
 	render() {

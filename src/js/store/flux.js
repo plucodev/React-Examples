@@ -5,6 +5,10 @@ const getState = ({ getStore, setStore }) => {
 				{
 					title: "Calculator",
 					description: "Easy Calculator"
+				},
+				{
+					title: "Form",
+					description: "Form with Redux"
 				}
 			],
 			demo: [
