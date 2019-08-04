@@ -8,12 +8,15 @@ export class Home extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<Link to="/calculator">
-					<button className="btn btn-success">Calculator</button>
-				</Link>
-				<Link to="/form">
-					<button className="btn btn-success">Form</button>
-				</Link>
+				<div className="container">
+					<div className="row">List of Projects</div>
+					<Link to="/calculator">
+						<button className="btn btn-success">Calculator</button>
+					</Link>
+					<Link to="/form">
+						<button className="btn btn-success">Form</button>
+					</Link>
+				</div>
 			</React.Fragment>
 		);
 	}
