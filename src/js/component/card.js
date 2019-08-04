@@ -13,7 +13,7 @@ export class Card extends React.Component {
 							return store.projects.map((item, index) => {
 								return (
 									<div key={index} className="col-4">
-										<div className="card">
+										<div className="card text-center">
 											<img
 												className="card-img-top"
 												src="https://picsum.photos/200/100"
@@ -23,7 +23,7 @@ export class Card extends React.Component {
 												<h5 className="card-title">{item.title}</h5>
 												<p className="card-text">{item.description}</p>
 												<Link to={"/" + item.link} className="btn btn-primary">
-													Go somewhere
+													{"Go to " + item.title}
 												</Link>
 											</div>
 										</div>
