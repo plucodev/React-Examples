@@ -4,11 +4,13 @@ const getState = ({ getStore, setStore }) => {
 			projects: [
 				{
 					title: "Calculator",
-					description: "Easy Calculator"
+					description: "Easy Calculator",
+					link: "calculator"
 				},
 				{
 					title: "Form",
-					description: "Form with Redux"
+					description: "Form with Redux",
+					link: "form"
 				}
 			],
 			demo: [

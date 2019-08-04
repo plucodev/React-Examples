@@ -1,32 +1,38 @@
 import React, { Component } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/card.scss";
+import { Link } from "react-router-dom";
 
 export class Card extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<Context.Consumer>
-					{({ store, action }) => {
-						return store.projects.map((item, index) => {
-							return (
-								<div key={index} className="card">
-									<img className="card-img-top" src=".../100px180/" alt="Card image cap" />
-									<div className="card-body">
-										<h5 className="card-title">{item.title}</h5>
-										<p className="card-text">
-											Some quick example text to build on the card title and make up the bulk of
-											the cards content.
-										</p>
-										<a href="#" className="btn btn-primary">
-											Go somewhere
-										</a>
+				<div className="row">
+					<Context.Consumer>
+						{({ store, action }) => {
+							return store.projects.map((item, index) => {
+								return (
+									<div key={index} className="col-4">
+										<div className="card">
+											<img
+												className="card-img-top"
+												src="https://picsum.photos/200/100"
+												alt="Card image cap"
+											/>
+											<div className="card-body">
+												<h5 className="card-title">{item.title}</h5>
+												<p className="card-text">{item.description}</p>
+												<Link to={"/" + item.link} className="btn btn-primary">
+													Go somewhere
+												</Link>
+											</div>
+										</div>
 									</div>
-								</div>
-							);
-						});
-					}}
-				</Context.Consumer>
+								);
+							});
+						}}
+					</Context.Consumer>
+				</div>
 			</React.Fragment>
 		);
 	}
