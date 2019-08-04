@@ -1,6 +1,12 @@
 const getState = ({ getStore, setStore }) => {
 	return {
 		store: {
+			projects: [
+				{
+					title: "Calculator",
+					description: "Easy Calculator"
+				}
+			],
 			demo: [
 				{
 					title: "FIRST",

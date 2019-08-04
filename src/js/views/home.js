@@ -1,6 +1,7 @@
 import React from "react";
 import Calculator from "../component/calculator";
 import Person from "../component/person";
+import Card from "../component/card";
 import { Link } from "react-router-dom";
 // import "../../styles/home.scss";
 
