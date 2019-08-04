@@ -9,7 +9,9 @@ export class Home extends React.Component {
 		return (
 			<React.Fragment>
 				<div className="container">
-					<div className="row">List of Projects</div>
+					<div className="row justify-content-center">
+						<h1>List of Projects</h1>
+					</div>
 					<Link to="/calculator">
 						<button className="btn btn-success">Calculator</button>
 					</Link>
