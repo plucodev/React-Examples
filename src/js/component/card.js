@@ -22,7 +22,7 @@ export class Card extends React.Component {
 											<div className="card-body">
 												<h5 className="card-title">{item.title}</h5>
 												<p className="card-text">{item.description}</p>
-												<Link to={"/" + item.link} className="btn btn-outline-primary">
+												<Link to={"/" + item.link} className="btn btn-outline-info">
 													{"Go to " + item.title}
 												</Link>
 											</div>
