@@ -5,6 +5,9 @@ export const Todo = () => (
 		<div className="container">
 			<div className="row">
 				<div className="col-6">
+					<div>
+						<h2 className="text-center">Todo With State</h2>
+					</div>
 					<div className="input-group mb-3">
 						<input
 							type="text"
@@ -14,13 +17,16 @@ export const Todo = () => (
 							aria-describedby="button-addon2"
 						/>
 						<div className="input-group-append">
-							<button className="btn btn-success" type="button" id="button-addon2">
+							<button className="btn btn-danger" type="button" id="button-addon2">
 								Add Todo
 							</button>
 						</div>
 					</div>
 				</div>
 				<div className="col-6">
+					<div>
+						<h2 className="text-center">Todo With Context API</h2>
+					</div>
 					<div className="input-group mb-3">
 						<input
 							type="text"
@@ -30,7 +36,7 @@ export const Todo = () => (
 							aria-describedby="button-addon2"
 						/>
 						<div className="input-group-append">
-							<button className="btn btn-success" type="button" id="button-addon2">
+							<button className="btn btn-danger" type="button" id="button-addon2">
 								Add Todo
 							</button>
 						</div>
