@@ -18,6 +18,7 @@ const getState = ({ getStore, setStore }) => {
 					link: "todo"
 				}
 			],
+			todos: [],
 			demo: [
 				{
 					title: "FIRST",

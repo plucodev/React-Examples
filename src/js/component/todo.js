@@ -5,9 +5,26 @@ export const Todo = () => (
 		<div className="container">
 			<div className="row">
 				<div className="col-6">
-					<div>
-						<h2 className="text-center">Todo With State</h2>
+					<div className="row">
+						<div>
+							<h2 className="text-center">Todo With State</h2>
+						</div>
+						<div className="input-group mb-3">
+							<input
+								type="text"
+								className="form-control"
+								placeholder="Create a new User"
+								aria-label="Create a new User"
+								aria-describedby="button-addon2"
+							/>
+							<div className="input-group-append">
+								<button className="btn btn-success" type="button" id="button-addon2">
+									Create User
+								</button>
+							</div>
+						</div>
 					</div>
+
 					<div className="input-group mb-3">
 						<input
 							type="text"
@@ -24,9 +41,26 @@ export const Todo = () => (
 					</div>
 				</div>
 				<div className="col-6">
-					<div>
-						<h2 className="text-center">Todo With Context API</h2>
+					<div className="row">
+						<div className="">
+							<h2 className="text-center">Todo With Context API</h2>
+						</div>
+						<div className="input-group mb-3 ">
+							<input
+								type="text"
+								className="form-control"
+								placeholder="Create a new User"
+								aria-label="Create a new User"
+								aria-describedby="button-addon2"
+							/>
+							<div className="input-group-append">
+								<button className="btn btn-success" type="button" id="button-addon2">
+									Create User
+								</button>
+							</div>
+						</div>
 					</div>
+
 					<div className="input-group mb-3">
 						<input
 							type="text"
