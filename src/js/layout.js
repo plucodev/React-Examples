@@ -6,7 +6,7 @@ import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
-
+import SearchBar from "./component/searchBar";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import Calculator from "./component/calculator";
@@ -24,6 +24,7 @@ export class Layout extends React.Component {
 				<BrowserRouter basename={basename}>
 					<ScrollToTop>
 						<Navbar />
+						<SearchBar />
 						<Switch>
 							<Route exact path="/" component={Home} />
 							<Route exact path="/calculator" component={Calculator} />
