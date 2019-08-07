@@ -11,6 +11,11 @@ const getState = ({ getStore, setStore }) => {
 					title: "Form",
 					description: "Form with Redux",
 					link: "form"
+				},
+				{
+					title: "Todo",
+					description: "Todo List with Fetch",
+					link: "todo"
 				}
 			],
 			demo: [

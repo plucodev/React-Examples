@@ -9,6 +9,7 @@ import injectContext from "./store/appContext";
 import SearchBar from "./component/searchBar";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { Todo } from "./component/todo";
 import Calculator from "./component/calculator";
 import Person from "./component/person";
 
@@ -28,6 +29,7 @@ export class Layout extends React.Component {
 						<Switch>
 							<Route exact path="/" component={Home} />
 							<Route exact path="/calculator" component={Calculator} />
+							<Route exact path="/todo" component={Todo} />
 							<Route exact path="/form" component={Person} />
 							<Route path="/demo" component={Demo} />
 							<Route path="/single/:theid" component={Single} />
