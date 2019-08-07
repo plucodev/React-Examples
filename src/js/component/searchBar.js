@@ -21,7 +21,7 @@ export default class SearchBar extends React.Component {
 							/>
 							<div className="input-group-append">
 								<button className="btn btn-info" type="button" id="button-addon2">
-									Button
+									Search
 								</button>
 							</div>
 						</div>
