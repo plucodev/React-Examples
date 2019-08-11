@@ -9,6 +9,7 @@ import injectContext from "./store/appContext";
 import SearchBar from "./component/searchBar";
 import { Navbar } from "./component/navbar";
 import { Starwars } from "./component/starwars";
+import { Contact } from "./component/contact";
 import { Footer } from "./component/footer";
 import { Todo } from "./component/todo";
 import Calculator from "./component/calculator";
