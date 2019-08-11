@@ -33,6 +33,7 @@ export class Layout extends React.Component {
 							<Route exact path="/todo" component={Todo} />
 							<Route exact path="/form" component={Person} />
 							<Route exact path="/startwars" component={Starwars} />
+							<Route exact path="/contact" component={Contact} />
 							<Route path="/demo" component={Demo} />
 							<Route path="/single/:theid" component={Single} />
 							<Route render={() => <h1>Not found!</h1>} />
