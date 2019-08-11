@@ -8,6 +8,7 @@ import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 import SearchBar from "./component/searchBar";
 import { Navbar } from "./component/navbar";
+import { Starwars } from "./component/starwars";
 import { Footer } from "./component/footer";
 import { Todo } from "./component/todo";
 import Calculator from "./component/calculator";
@@ -31,6 +32,7 @@ export class Layout extends React.Component {
 							<Route exact path="/calculator" component={Calculator} />
 							<Route exact path="/todo" component={Todo} />
 							<Route exact path="/form" component={Person} />
+							<Route exact path="/startwars" component={Starwars} />
 							<Route path="/demo" component={Demo} />
 							<Route path="/single/:theid" component={Single} />
 							<Route render={() => <h1>Not found!</h1>} />
