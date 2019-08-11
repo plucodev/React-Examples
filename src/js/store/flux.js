@@ -16,6 +16,16 @@ const getState = ({ getStore, setStore }) => {
 					title: "Todo",
 					description: "Todo List with Fetch",
 					link: "todo"
+				},
+				{
+					title: "Contact",
+					description: "Contact Manager with Fetch",
+					link: "contact"
+				},
+				{
+					title: "Starwars",
+					description: "Starwars with Fetch",
+					link: "starwars"
 				}
 			],
 			todos: [],

@@ -7,12 +7,12 @@ export class Card extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<div className="row">
+				<div className="row ">
 					<Context.Consumer>
 						{({ store, action }) => {
 							return store.projects.map((item, index) => {
 								return (
-									<div key={index} className="col-4">
+									<div key={index} className="col-4 mb-5">
 										<div className="card text-center">
 											<img
 												className="card-img-top"
