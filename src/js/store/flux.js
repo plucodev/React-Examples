@@ -26,6 +26,11 @@ const getState = ({ getStore, setStore }) => {
 					title: "Starwars",
 					description: "Starwars with Fetch",
 					link: "starwars"
+				},
+				{
+					title: "Queue",
+					description: "Queue with Twilio",
+					link: "queue"
 				}
 			],
 			todos: [],
