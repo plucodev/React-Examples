@@ -9,6 +9,7 @@ import injectContext from "./store/appContext";
 import SearchBar from "./component/searchBar";
 import { Navbar } from "./component/navbar";
 import { Starwars } from "./component/starwars";
+import { Queue } from "./component/queue";
 import { Contact } from "./component/contact";
 import { Footer } from "./component/footer";
 import { Todo } from "./component/todo";
@@ -34,6 +35,7 @@ export class Layout extends React.Component {
 							<Route exact path="/todo" component={Todo} />
 							<Route exact path="/form" component={Person} />
 							<Route exact path="/startwars" component={Starwars} />
+							<Route exact path="/queue" component={Queue} />
 							<Route exact path="/contact" component={Contact} />
 							<Route path="/demo" component={Demo} />
 							<Route path="/single/:theid" component={Single} />
