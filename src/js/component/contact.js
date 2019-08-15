@@ -6,6 +6,12 @@ export class Contact extends React.Component {
 			<React.Fragment>
 				<div className="container">
 					<div className="row">Contact List</div>
+					<div className="col-6">
+						<div className="row">Contact List With Fetch</div>
+					</div>
+					<div className="col-6">
+						<div className="row">Contact List With Hooks</div>
+					</div>
 				</div>
 			</React.Fragment>
 		);
