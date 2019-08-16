@@ -27,6 +27,18 @@ const injectContext = PassedComponent => {
 			 * This function is the equivalent to "window.onLoad", it only run once on the entire application lifetime
 			 * you should do your ajax requests or fetch api requests here
 			 **/
+			fetch("https://assets.breatheco.de/apis/fake/contact/agenda/pluco")
+				.then(response => response.json())
+				.then(data => {
+					console.log(data);
+					let store = this.state.store;
+					this.setState({
+						store: {
+							...store,
+							contacts: data
+						}
+					});
+				});
 		}
 
 		render() {

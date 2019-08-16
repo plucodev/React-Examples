@@ -1,4 +1,5 @@
 import React from "react";
+import ContactCard from "./contactCard";
 
 export class Contact extends React.Component {
 	render() {
@@ -9,6 +10,11 @@ export class Contact extends React.Component {
 					<div className="row">
 						<div className="col-6">
 							<div className="row">Contact List With Fetch</div>
+							<div className="row">
+								<ul>
+									<ContactCard />
+								</ul>
+							</div>
 						</div>
 						<div className="col-6">
 							<div className="row">Contact List With Hooks</div>

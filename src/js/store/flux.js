@@ -34,7 +34,7 @@ const getState = ({ getStore, setStore }) => {
 				}
 			],
 			todos: [],
-      contacts:[],
+			contacts: [],
 			demo: [
 				{
 					title: "FIRST",
