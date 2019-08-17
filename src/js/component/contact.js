@@ -10,8 +10,8 @@ export class Contact extends React.Component {
 						<h1>Contact List</h1>
 					</div>
 					<div className="row">
-						<div className="col-6">
-							<div className="row">Contact List With Fetch</div>
+						<div className="col-6 ">
+							<div className="row border rounded my-3">Contact List With Fetch</div>
 							<div className="row">
 								<ul className="pl-0">
 									<ContactCard />
@@ -19,7 +19,7 @@ export class Contact extends React.Component {
 							</div>
 						</div>
 						<div className="col-6">
-							<div className="row">Contact List With Hooks</div>
+							<div className="row border rounded my-3">Contact List With Hooks</div>
 						</div>
 					</div>
 				</div>
