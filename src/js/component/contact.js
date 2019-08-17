@@ -6,12 +6,14 @@ export class Contact extends React.Component {
 		return (
 			<React.Fragment>
 				<div className="container">
-					<div className="row">Contact List</div>
+					<div className="row justify-content-center">
+						<h1>Contact List</h1>
+					</div>
 					<div className="row">
 						<div className="col-6">
 							<div className="row">Contact List With Fetch</div>
 							<div className="row">
-								<ul>
+								<ul className="pl-0">
 									<ContactCard />
 								</ul>
 							</div>
