@@ -6,7 +6,7 @@ export class Contact extends React.Component {
 		return (
 			<React.Fragment>
 				<div className="container">
-					<div className="row justify-content-center">
+					<div className="row justify-content-center border rounded py-3">
 						<h1>Contact List</h1>
 					</div>
 					<div className="row">
