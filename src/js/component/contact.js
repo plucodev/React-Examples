@@ -11,15 +11,25 @@ export class Contact extends React.Component {
 					</div>
 					<div className="row">
 						<div className="col-6 ">
-							<div className="row border rounded my-3">Contact List With Fetch</div>
+							<div className="row my-3">
+								<div className="col-10 m-auto border border-warning rounded ">
+									Contact List With Fetch
+								</div>
+							</div>
 							<div className="row">
-								<ul className="pl-0">
-									<ContactCard />
-								</ul>
+								<div className="col-10 px-0 m-auto border border-success rounded ">
+									<ul className="pl-0 mb-0">
+										<ContactCard />
+									</ul>
+								</div>
 							</div>
 						</div>
 						<div className="col-6">
-							<div className="row border rounded my-3">Contact List With Hooks</div>
+							<div className="row my-3">
+								<div className="col-10 m-auto border border-success rounded ">
+									Contact List With Hooks
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
