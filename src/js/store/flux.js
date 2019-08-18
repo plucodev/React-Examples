@@ -49,7 +49,7 @@ const getState = ({ getStore, setStore }) => {
 			]
 		},
 		actions: {
-			addContact: (name, email, address, phone) => {
+			addContact: (name, email, address, phone, props) => {
 				fetch("https://assets.breatheco.de/apis/fake/contact/", {
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
@@ -60,7 +60,14 @@ const getState = ({ getStore, setStore }) => {
 						phone: phone,
 						agenda_slug: "pluco"
 					})
+				}).then(() => {
+					fetch("https://assets.breatheco.de/apis/fake/contact/agenda/pluco")
+						.then(response => response.json())
+						.then(data => {
+							setStore({ contacts: data });
+						});
 				});
+				props.history.push("/contact");
 			},
 			changeColor: (index, color) => {
 				//get the store
@@ -79,5 +86,7 @@ const getState = ({ getStore, setStore }) => {
 		}
 	};
 };
-
+// getState.propTypes = {
+// 	history: PropTypes.object
+// };
 export default getState;
