@@ -1,5 +1,6 @@
 import React from "react";
 import ContactCard from "./contactCard";
+import { Link } from "react-router-dom";
 
 export class Contact extends React.Component {
 	render() {
@@ -24,9 +25,11 @@ export class Contact extends React.Component {
 								</div>
 							</div>
 							<div className="row justify-content-center mt-3">
-								<button type="button" className="btn btn-outline-info">
-									Add Contact
-								</button>
+								<Link to="/add-contact">
+									<button type="button" className="btn btn-outline-info">
+										Add Contact
+									</button>
+								</Link>
 							</div>
 						</div>
 						<div className="col-6">

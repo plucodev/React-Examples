@@ -57,7 +57,8 @@ const getState = ({ getStore, setStore }) => {
 						full_name: name,
 						email: email,
 						address: address,
-						phone: phone
+						phone: phone,
+						agenda_slug: "pluco"
 					})
 				});
 			},
