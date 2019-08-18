@@ -69,6 +69,18 @@ const getState = ({ getStore, setStore }) => {
 				});
 				props.history.push("/contact");
 			},
+			deleteContact: id => {
+				fetch("https://assets.breatheco.de/apis/fake/contact/" + id, {
+					method: "DELETE",
+					headers: { "Content-Type": "application/json" }
+				}).then(() => {
+					fetch("https://assets.breatheco.de/apis/fake/contact/agenda/pluco")
+						.then(response => response.json())
+						.then(data => {
+							setStore({ contacts: data });
+						});
+				});
+			},
 			changeColor: (index, color) => {
 				//get the store
 				const store = getStore();

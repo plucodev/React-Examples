@@ -30,7 +30,7 @@ class ContactCard extends React.Component {
 											<button className="btn">
 												<i className="fas fa-pencil-alt mr-3" />
 											</button>
-											<button className="btn" onClick={() => this.props.onDelete()}>
+											<button className="btn" onClick={() => actions.deleteContact(item.id)}>
 												<i className="fas fa-trash-alt" />
 											</button>
 										</div>
