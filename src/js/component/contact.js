@@ -18,7 +18,7 @@ export class Contact extends React.Component {
 								</div>
 							</div>
 							<div className="row">
-								<div className="col-10 px-0 m-auto border border-success rounded ">
+								<div className="col-10 px-0 m-auto ">
 									<ul className="pl-0 mb-0">
 										<ContactCard />
 									</ul>

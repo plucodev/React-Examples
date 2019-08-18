@@ -16,7 +16,7 @@ class ContactCard extends React.Component {
 				{({ store, actions }) => {
 					return store.contacts.map((item, index) => {
 						return (
-							<li key={index} className="list-group-item">
+							<li key={index} className="list-group-item border border-success rounded mb-2">
 								<div className="row w-100">
 									<div className="col-12 col-sm-6 col-md-3 px-0">
 										<img
