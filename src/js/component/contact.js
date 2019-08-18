@@ -23,6 +23,11 @@ export class Contact extends React.Component {
 									</ul>
 								</div>
 							</div>
+							<div className="row justify-content-center mt-3">
+								<button type="button" className="btn btn-outline-info">
+									Add Contact
+								</button>
+							</div>
 						</div>
 						<div className="col-6">
 							<div className="row my-3">
