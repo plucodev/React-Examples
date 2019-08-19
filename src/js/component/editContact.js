@@ -18,10 +18,13 @@ export default class EditContact extends React.Component {
 		return (
 			<Context.Consumer>
 				{({ store, actions }) => {
+					let contact = store.contacts.find(item => item.id === this.props.match.params.theid);
 					return (
 						<div className="container">
 							<div>
-								<h1 className="text-center mt-5">{"Edit Contact # "+ this.props.match.params.theid}</h1>
+								<h1 className="text-center mt-5">
+									{"Edit Contact # " + this.props.match.params.theid + " " + contact.full_name}
+								</h1>
 								<form>
 									<div className="form-group">
 										<label>Full Name</label>
@@ -87,5 +90,5 @@ export default class EditContact extends React.Component {
 }
 EditContact.propTypes = {
 	history: PropTypes.object,
-  match: PropTypes.object
+	match: PropTypes.object
 };
