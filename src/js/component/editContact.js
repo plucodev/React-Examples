@@ -29,6 +29,7 @@ export default class EditContact extends React.Component {
 									<div className="form-group">
 										<label>Full Name</label>
 										<input
+											defaultValue={contact.full_name}
 											onChange={e => this.setState({ full_name: e.target.value })}
 											type="text"
 											className="form-control"
@@ -38,6 +39,7 @@ export default class EditContact extends React.Component {
 									<div className="form-group">
 										<label>Email</label>
 										<input
+											defaultValue={contact.email}
 											onChange={e => this.setState({ email: e.target.value })}
 											type="email"
 											className="form-control"
@@ -47,6 +49,7 @@ export default class EditContact extends React.Component {
 									<div className="form-group">
 										<label>Address</label>
 										<input
+											defaultValue={contact.address}
 											onChange={e => this.setState({ address: e.target.value })}
 											type="text"
 											className="form-control"
@@ -56,6 +59,7 @@ export default class EditContact extends React.Component {
 									<div className="form-group">
 										<label>Phone</label>
 										<input
+											defaultValue={contact.phone}
 											onChange={e => this.setState({ phone: e.target.value })}
 											type="text"
 											className="form-control"
