@@ -68,11 +68,12 @@ export default class EditContact extends React.Component {
 									</div>
 									<button
 										onClick={() =>
-											actions.addContact(
+											actions.editContact(
 												this.state.full_name,
 												this.state.email,
 												this.state.address,
 												this.state.phone,
+												contact.id,
 												this.props
 											)
 										}
