@@ -85,6 +85,7 @@ export default class EditContact extends React.Component {
 		);
 	}
 }
-AddContact.propTypes = {
-	history: PropTypes.object
+EditContact.propTypes = {
+	history: PropTypes.object,
+  match: PropTypes.object
 };

@@ -12,6 +12,7 @@ import { Starwars } from "./component/starwars";
 import { Queue } from "./component/queue";
 import { Contact } from "./component/contact";
 import AddContact from "./component/addContact";
+import EditContact from "./component/editContact";
 import { Footer } from "./component/footer";
 import { Todo } from "./component/todo";
 import Calculator from "./component/calculator";
@@ -40,6 +41,7 @@ export class Layout extends React.Component {
 							<Route exact path="/contact" component={Contact} />
 
 							<Route exact path="/add-contact" component={AddContact} />
+							<Route exact path="/edit-contact/:theid" component={EditContact} />
 							<Route path="/demo" component={Demo} />
 							<Route path="/single/:theid" component={Single} />
 							<Route render={() => <h1>Not found!</h1>} />
