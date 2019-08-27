@@ -11,6 +11,7 @@ import { Navbar } from "./component/navbar";
 import { Starwars } from "./component/starwars";
 import { Queue } from "./component/queue";
 import { Contact } from "./component/contact";
+import { Login } from "./component/login";
 import AddContact from "./component/addContact";
 import EditContact from "./component/editContact";
 import { Footer } from "./component/footer";
@@ -38,6 +39,7 @@ export class Layout extends React.Component {
 							<Route exact path="/form" component={Person} />
 							<Route exact path="/startwars" component={Starwars} />
 							<Route exact path="/queue" component={Queue} />
+							<Route exact path="/login" component={Login} />
 							<Route exact path="/contact" component={Contact} />
 
 							<Route exact path="/add-contact" component={AddContact} />

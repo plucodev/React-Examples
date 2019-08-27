@@ -7,11 +7,7 @@ export class Login extends React.Component {
 		return (
 			<Context.Consumer>
 				{({ store, actions }) => {
-					return (
-						<React.Fragment>
-            Login
-            </React.Fragment>
-					);
+					return <React.Fragment>Login</React.Fragment>;
 				}}
 			</Context.Consumer>
 		);
