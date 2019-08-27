@@ -49,6 +49,9 @@ const getState = ({ getStore, setStore }) => {
 			]
 		},
 		actions: {
+			login: credentials => {
+				console.log("Credentials:", credentials);
+			},
 			addContact: (name, email, address, phone, props) => {
 				fetch("https://assets.breatheco.de/apis/fake/contact/", {
 					method: "POST",
