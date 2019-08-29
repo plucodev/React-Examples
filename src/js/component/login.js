@@ -9,8 +9,8 @@ export class Login extends React.Component {
 				{({ store, actions }) => {
 					return (
 						<React.Fragment>
-							<div className="text-center">
-								<form className="form-signin">
+							<div className="m-auto text-center">
+								<div className="form-signin w-100">
 									<img
 										className="mb-4"
 										src="/docs/4.3/assets/brand/bootstrap-solid.svg"
@@ -49,7 +49,7 @@ export class Login extends React.Component {
 										Sign in
 									</button>
 									<p className="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
-								</form>
+								</div>
 							</div>
 						</React.Fragment>
 					);
