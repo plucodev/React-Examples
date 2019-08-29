@@ -49,6 +49,13 @@ const getState = ({ getStore, setStore }) => {
 			]
 		},
 		actions: {
+			data: () => {
+				fetch("https://api.github.com/users/plucodev")
+					.then(response => response.json())
+					.then(data => {
+						setStore({ test: data });
+					});
+			},
 			login: credentials => {
 				console.log("Credentials:", credentials);
 			},
