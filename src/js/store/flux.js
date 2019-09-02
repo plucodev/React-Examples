@@ -36,6 +36,7 @@ const getState = ({ getStore, setStore }) => {
 			todos: [],
 			contacts: [],
 			token: null,
+      currentUser: null,
 			demo: [
 				{
 					title: "FIRST",
